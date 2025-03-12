@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Code, Rocket, Server, Shield, ArrowRight, Infinity, Diamond } from "lucide-react";
+import { Code, Rocket, Server, Shield, ArrowRight, Infinity, Diamond, Star, Quote } from "lucide-react";
 
 const Index = () => {
   return (
@@ -69,6 +68,91 @@ const Index = () => {
               <Diamond className="w-12 h-12 text-blue-400 mb-6 group-hover:scale-110 transition-transform" />
               <h3 className="text-xl font-semibold mb-3 text-white">Security First</h3>
               <p className="text-gray-400">Protected and compliant solutions</p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Showcase Section */}
+      <section className="py-24 px-6 relative">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(67,97,238,0.15),transparent_50%)]" />
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-16 text-white">Featured Projects</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="p-6 bg-gray-900/50 backdrop-blur-sm border-gray-800 hover:border-blue-500/50 transition-all group">
+              <div className="h-48 mb-4 rounded-lg bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center">
+                <Code className="w-16 h-16 text-blue-400 group-hover:scale-110 transition-transform" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-white">E-Commerce Platform</h3>
+              <p className="text-gray-400 mb-4">Built a scalable e-commerce solution with real-time inventory management</p>
+              <div className="flex gap-2">
+                <span className="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-300">React</span>
+                <span className="text-xs px-2 py-1 rounded-full bg-blue-500/20 text-blue-300">Node.js</span>
+              </div>
+            </Card>
+            <Card className="p-6 bg-gray-900/50 backdrop-blur-sm border-gray-800 hover:border-blue-500/50 transition-all group">
+              <div className="h-48 mb-4 rounded-lg bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center">
+                <Shield className="w-16 h-16 text-purple-400 group-hover:scale-110 transition-transform" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-white">FinTech Security</h3>
+              <p className="text-gray-400 mb-4">Implemented robust security systems for financial transactions</p>
+              <div className="flex gap-2">
+                <span className="text-xs px-2 py-1 rounded-full bg-purple-500/20 text-purple-300">TypeScript</span>
+                <span className="text-xs px-2 py-1 rounded-full bg-purple-500/20 text-purple-300">AWS</span>
+              </div>
+            </Card>
+            <Card className="p-6 bg-gray-900/50 backdrop-blur-sm border-gray-800 hover:border-blue-500/50 transition-all group">
+              <div className="h-48 mb-4 rounded-lg bg-gradient-to-br from-pink-500/20 to-red-500/20 flex items-center justify-center">
+                <Rocket className="w-16 h-16 text-pink-400 group-hover:scale-110 transition-transform" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-white">AI Integration</h3>
+              <p className="text-gray-400 mb-4">Developed smart automation solutions using cutting-edge AI</p>
+              <div className="flex gap-2">
+                <span className="text-xs px-2 py-1 rounded-full bg-pink-500/20 text-pink-300">Python</span>
+                <span className="text-xs px-2 py-1 rounded-full bg-pink-500/20 text-pink-300">TensorFlow</span>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Client Testimonials */}
+      <section className="py-24 px-6 bg-black/20 backdrop-blur-sm">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-16 text-white">Client Testimonials</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="p-8 bg-gray-900/50 backdrop-blur-sm border-gray-800 hover:border-blue-500/50 transition-all">
+              <Quote className="w-10 h-10 text-blue-400 mb-6" />
+              <p className="text-gray-300 mb-6">"NewAge CodeCraft transformed our business with their innovative solutions. Their expertise in scalable architecture is unmatched."</p>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-500" />
+                <div>
+                  <h4 className="text-white font-semibold">Sarah Johnson</h4>
+                  <p className="text-gray-400 text-sm">CEO, TechVision</p>
+                </div>
+              </div>
+            </Card>
+            <Card className="p-8 bg-gray-900/50 backdrop-blur-sm border-gray-800 hover:border-blue-500/50 transition-all">
+              <Quote className="w-10 h-10 text-purple-400 mb-6" />
+              <p className="text-gray-300 mb-6">"The team's attention to detail and commitment to excellence made our project a huge success. Highly recommended!"</p>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-pink-500" />
+                <div>
+                  <h4 className="text-white font-semibold">Michael Chen</h4>
+                  <p className="text-gray-400 text-sm">CTO, InnovateX</p>
+                </div>
+              </div>
+            </Card>
+            <Card className="p-8 bg-gray-900/50 backdrop-blur-sm border-gray-800 hover:border-blue-500/50 transition-all">
+              <Quote className="w-10 h-10 text-pink-400 mb-6" />
+              <p className="text-gray-300 mb-6">"Working with NewAge CodeCraft was a game-changer. They delivered beyond our expectations and on time."</p>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-pink-500 to-red-500" />
+                <div>
+                  <h4 className="text-white font-semibold">Emily Davis</h4>
+                  <p className="text-gray-400 text-sm">Product Lead, FutureFlow</p>
+                </div>
+              </div>
             </Card>
           </div>
         </div>
